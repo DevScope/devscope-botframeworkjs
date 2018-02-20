@@ -17,7 +17,8 @@
         background: "white",
         border: "1px solid #DBDEE1",
         left: "null",
-        left: "calc(100% - 300px)"
+        left: "calc(100% - 300px)",
+        animated: true
     };
 
     var config = defaultConfig;
@@ -44,6 +45,7 @@
             config.border = botConfig.border || config.border;
             config.left = botConfig.left || config.left;
             config.right = botConfig.right || config.right;
+            config.animated = botConfig.animated || config.animated;
 
             var callback = function(result) {
                 var iframeContainer = document.querySelector('#botFrameworkContainer');
@@ -69,26 +71,20 @@
                     iframeContainer.style.border = config.border;
                     iframeContainer.style.left = config.left;
                     iframeContainer.style.right = config.right;
+                    if (config.animated)
+                    	iframeContainer.style.transition = "height 0.20s ease";
 
                     var containerHeader = document.createElement("div");
-                    containerHeader.style.float = "right";
-                    containerHeader.style["margin-bottom"] = "-36px";
-                    containerHeader.style.color = "white";
-                    containerHeader.style["margin-top"] = "5px";
-                    containerHeader.style["margin-right"] = "10px";
+                    containerHeader.style.width = "100%";
+                    containerHeader.style.height = "37px";
+                    containerHeader.style.position = "absolute";
                     containerHeader.style.cursor = "pointer";
-
-                    var icon = document.createElement("i");
-                    icon.setAttribute("id","bot-header-collapse");
-                    icon.className = "fa fa-angle-down fa-2x";
-                    containerHeader.appendChild(icon);
+                    containerHeader.style.background = "transparent";
 
                     containerHeader.onclick = function() {
                         if (iframeContainer.style.height == config.height) {
-                    		icon.className = "fa fa-angle-up fa-2x";
                             iframeContainer.style.height = '40px';
                         } else {
-                    		icon.className = "fa fa-angle-down fa-2x";
                             iframeContainer.style.height = config.height;
                         }
                     }

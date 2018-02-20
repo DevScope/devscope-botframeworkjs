@@ -1,6 +1,7 @@
 To install:
 
-* npm install //TODO: Get internal Url that has npm package
+* // TODO: Get internal Url that has npm package
+* npm install devscope-botframeworkjs
 
 To use:
 
@@ -15,13 +16,19 @@ botFramework.config(
 * ## Optional parameters ##
 ```
 {
+    bot_id: null,
+    secret: null,
     width: "300px",
     height: "450px",
     bottom: "0",
     top: null,
-    position: "absolute",
+    position: "sticky",
+    background: "white",
+    header_background: "#3e92d2",
+    header_color: "#FFFFFF",
     border: "1px solid #DBDEE1",
     left: "null",
-    right: "15px"
+    left: "calc(100% - 300px)",
+    animated: true
 }
 ```

@@ -1,4 +1,12 @@
-﻿(function() {
+﻿/**
+ * devscope-botframeworkjs
+ * Integration module of bot framework web chat
+ * @version v1.0.0 - 2018-01-27
+ * @link https://github.com/ruisilva450/devscope-botframeworkjs
+ * @author Rui Silva <rui.silva450@gmail.com>
+ * @license MIT License, http://www.opensource.org/licenses/MIT
+ */
+(function() {
     'use strict';
 
     var constants = {

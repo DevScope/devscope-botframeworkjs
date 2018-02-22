@@ -19,13 +19,13 @@
         height: "450px",
         bottom: "0",
         top: null,
-        position: "sticky",
+        position: "fixed",
         background: "white",
         header_background: "#3e92d2",
         header_color: "#FFFFFF",
         border: "1px solid #DBDEE1",
         left: "null",
-        left: "calc(100% - 300px)",
+        left: "calc(100% - 320px)",
         animated: true
     };
     var config = defaultConfig;

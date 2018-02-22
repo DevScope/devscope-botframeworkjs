@@ -1,11 +1,13 @@
 Last version: v1.0.2
 
-To install:
+## To install: ##
 
-* // TODO: Get internal Url that has npm package
-* npm install devscope-botframeworkjs
+* **NPM** // TODO: Get internal Url that has npm package
+    * npm install devscope-botframeworkjs
+* **Manual**
+    * [Fazer download do código](https://raw.githubusercontent.com/ruisilva450/devscope-botframeworkjs/master/src/botFramework.js?token=AFYvWufX5ZpuKUCoo90d824b1Sokg_pxks5amEb3wA%3D%3D)
 
-To use:
+## To use: ##
 
 ```
 botFramework.config(
@@ -14,8 +16,7 @@ botFramework.config(
         secret:"YOUR_SECRET_ID"
     });
 ```
-
-* ## Optional parameters ##
+## Optional parameters ##
 ```
 {
     bot_id: null,

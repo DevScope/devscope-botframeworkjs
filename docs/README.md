@@ -35,3 +35,17 @@ botFramework.config(
     animated: true
 }
 ```
+
+### Para obter o bot de QnA com reporting no PBIRobots: ###
+
+``` 
+<script type="text/javascript">
+    (function () {
+        botFramework.config(
+            {
+                bot_id: "Powerbi_Robots",
+                secret: "Pj21yov1Jto.cwA.DtI.yP3cBZahWvW6xPJh4UqwE602MqPKB1TWYHrGuupqLy0"
+            });
+    })();
+</script>
+```

@@ -1,3 +1,5 @@
+Last version: v1.0.2
+
 To install:
 
 * // TODO: Get internal Url that has npm package
@@ -22,7 +24,7 @@ botFramework.config(
     height: "450px",
     bottom: "0",
     top: null,
-    position: "sticky",
+    position: "fixed",
     background: "white",
     header_background: "#3e92d2",
     header_color: "#FFFFFF",

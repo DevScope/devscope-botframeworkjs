@@ -1,7 +1,7 @@
 ﻿/**
  * devscope-botframeworkjs
  * Integration module of bot framework web chat
- * @version v1.0.2 - 2018-01-27
+ * @version v1.0.3 - 2018-02-22
  * @link https://github.com/ruisilva450/devscope-botframeworkjs
  * @author Rui Silva <rui.silva450@gmail.com>
  * @license MIT License, http://www.opensource.org/licenses/MIT
@@ -26,10 +26,20 @@
         border: "1px solid #DBDEE1",
         left: "null",
         left: "calc(100% - 320px)",
-        animated: true
+        animated: true,
+        initMinimized: true
     };
     var config = defaultConfig;
-    var botIFrame = {
+
+    var minimaxHandler = function(iframeContainer) {
+        if (iframeContainer.style.height == config.height) {
+            iframeContainer.style.height = '40px';
+        } else {
+            iframeContainer.style.height = config.height;
+        }
+    };
+
+    var botElement = {
         config: function(botConfig) {
             if (botConfig.bot_id == null || botConfig.bot_id == undefined || botConfig.bot_id == "") {
                 return "bot_id is required!";
@@ -51,6 +61,7 @@
             config.left = botConfig.left || config.left;
             config.right = botConfig.right || config.right;
             config.animated = botConfig.animated || config.animated;
+            config.initMinimized = botConfig.initMinimized || config.initMinimized;
             var callback = function(result) {
                 var iframeContainer = document.querySelector('#botFrameworkContainer');
                 if (iframeContainer == null || iframeContainer == undefined) {
@@ -87,13 +98,15 @@
                     headerText.style.cssText = "font-size:18px !important;font-family:'Segoe UI' !important;color:" + config.header_color + " !important;text-align:left !important;padding-top:7px;padding-left:15px";
                     headerText.innerHTML = "Chat";
                     containerHeader.appendChild(headerText);
+
                     containerHeader.onclick = function() {
-                        if (iframeContainer.style.height == config.height) {
-                            iframeContainer.style.height = '40px';
-                        } else {
-                            iframeContainer.style.height = config.height;
-                        }
+                        minimaxHandler(iframeContainer);
+                    };
+
+                    if (config.initMinimized) {
+                        minimaxHandler(iframeContainer);
                     }
+
                     iframeContainer.appendChild(containerHeader);
                     iframe.setAttribute("id", "botFramework");
                     iframe.setAttribute("src", constants.iframeUrl + config.bot_id + "?t=" + result.slice(1, -1));
@@ -115,5 +128,5 @@
             xmlHttp.send(null);
         }
     };
-    window.botFramework = botIFrame;
+    window.botFramework = botElement;
 })();

@@ -1,4 +1,4 @@
-Last version: v1.0.2
+Last version: v1.0.3
 
 ## To install: ##
 
@@ -32,7 +32,8 @@ botFramework.config(
     border: "1px solid #DBDEE1",
     left: "null",
     left: "calc(100% - 300px)",
-    animated: true
+    animated: true,
+    initMinimized: true
 }
 ```
 

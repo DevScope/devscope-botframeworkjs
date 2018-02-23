@@ -1,7 +1,7 @@
 ﻿/**
  * devscope-botframeworkjs
  * Integration module of bot framework web chat
- * @version v1.0.3 - 2018-02-22
+ * @version v1.0.4 - 2018-02-22
  * @link https://github.com/ruisilva450/devscope-botframeworkjs
  * @author Rui Silva <rui.silva450@gmail.com>
  * @license MIT License, http://www.opensource.org/licenses/MIT
@@ -17,6 +17,7 @@
         secret: null,
         width: "300px",
         height: "450px",
+        max_height:"100%",
         bottom: "0",
         top: null,
         position: "fixed",
@@ -51,6 +52,7 @@
             config.secret = botConfig.secret;
             config.width = botConfig.width || config.width;
             config.height = botConfig.height || config.height;
+            config.max_height = botConfig.max_height || config.max_height;
             config.bottom = botConfig.bottom || config.bottom;
             config.top = botConfig.top || config.top;
             config.background = botConfig.background || config.background;
@@ -77,6 +79,7 @@
                     iframeContainer.setAttribute("id", "botFrameworkContainer");
                     iframeContainer.style.width = config.width;
                     iframeContainer.style.height = config.height;
+                    iframeContainer.style.maxHeight = config.max_height;
                     iframeContainer.style.bottom = config.bottom;
                     iframeContainer.style.top = config.top;
                     iframeContainer.style.background = config.background;

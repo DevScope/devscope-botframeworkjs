@@ -1,4 +1,4 @@
-Last version: v1.0.3
+Last version: v1.0.4
 
 ## To install: ##
 
@@ -23,6 +23,7 @@ botFramework.config(
     secret: null,
     width: "300px",
     height: "450px",
+    max_height:"100%",
     bottom: "0",
     top: null,
     position: "fixed",
@@ -31,13 +32,13 @@ botFramework.config(
     header_color: "#FFFFFF",
     border: "1px solid #DBDEE1",
     left: "null",
-    left: "calc(100% - 300px)",
+    left: "calc(100% - 320px)",
     animated: true,
     initMinimized: true
 }
 ```
 
-### Para obter o bot de QnA com reporting no PBIRobots: ###
+## Para obter o bot de QnA com reporting no PBIRobots: ##
 
 ``` 
 <script type="text/javascript">

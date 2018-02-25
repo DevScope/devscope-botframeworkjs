@@ -17,7 +17,7 @@
         secret: null,
         width: "300px",
         height: "450px",
-        max_height:"100%",
+        max_height: "100%",
         bottom: "0",
         top: null,
         position: "fixed",
@@ -34,7 +34,7 @@
 
     var minimaxHandler = function(iframeContainer) {
         if (iframeContainer.style.height == config.height) {
-            iframeContainer.style.height = '40px';
+            iframeContainer.style.height = '37px';
         } else {
             iframeContainer.style.height = config.height;
         }

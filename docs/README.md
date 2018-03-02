@@ -5,7 +5,7 @@ Last version: v1.0.4
 * **NPM** // TODO: Get internal Url that has npm package
     * npm install devscope-botframeworkjs
 * **Manual**
-    * [Fazer download do código](https://raw.githubusercontent.com/ruisilva450/devscope-botframeworkjs/master/src/botFramework.js?token=AFYvWufX5ZpuKUCoo90d824b1Sokg_pxks5amEb3wA%3D%3D)
+    * [Fazer download do código](https://raw.githubusercontent.com/ruisilva450/devscope-botframeworkjs/master/src/botFramework.js?token=AFYvWq0I4d5c2v_MbDice3cXZ81Kbk2zks5aoq8awA%3D%3D)
 
 ## To use: ##
 

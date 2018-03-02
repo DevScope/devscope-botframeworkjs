@@ -87,7 +87,7 @@
                     iframeContainer.style.border = config.border;
                     iframeContainer.style.left = config.left;
                     iframeContainer.style.right = config.right;
-                    iframeContainer.style.zIndex = 2;
+                    iframeContainer.style.zIndex = 1500;
                     if (config.animated)
                         iframeContainer.style.transition = "height 0.20s ease";
                     var containerHeader = document.createElement("div");

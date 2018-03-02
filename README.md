@@ -1,5 +1,7 @@
 Last version: v1.0.4
 
+Docs: https://DevScope.github.com/devscope-botframeworkjs
+
 ## To install: ##
 
 * **NPM** // TODO: Get internal Url that has npm package

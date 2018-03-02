@@ -2,7 +2,7 @@
  * devscope-botframeworkjs
  * Integration module of bot framework web chat
  * @version v1.0.4 - 2018-02-22
- * @link https://github.com/ruisilva450/devscope-botframeworkjs
+ * @link https://github.com/DevScope/devscope-botframeworkjs
  * @author Rui Silva <rui.silva450@gmail.com>
  * @license MIT License, http://www.opensource.org/licenses/MIT
  */

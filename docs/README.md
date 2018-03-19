@@ -1,11 +1,11 @@
-Last version: v1.0.4
+Last version: v1.5.0
 
 ## To install: ##
 
 * **NPM** // TODO: Get internal Url that has npm package
     * npm install devscope-botframeworkjs
 * **Manual**
-    * [Fazer download do código](https://raw.githubusercontent.com/DevScope/devscope-botframeworkjs/master/src/botFramework.js)
+    * [Download code](https://raw.githubusercontent.com/DevScope/devscope-botframeworkjs/master/src/botFramework.js)
 
 ## To use: ##
 
@@ -21,6 +21,8 @@ botFramework.config(
 {
     bot_id: null,
     secret: null,
+    user_id: null,
+    username: null,
     width: "300px",
     height: "450px",
     max_height:"100%",
@@ -38,7 +40,7 @@ botFramework.config(
 }
 ```
 
-## Para obter o bot de QnA com reporting no PBIRobots: ##
+## To obtain an QnA bot with reporting for PBIRobots: ##
 
 ``` 
 <script type="text/javascript">
@@ -46,7 +48,7 @@ botFramework.config(
         botFramework.config(
             {
                 bot_id: "Powerbi_Robots",
-                secret: "Pj21yov1Jto.cwA.DtI.yP3cBZahWvW6xPJh4UqwE602MqPKB1TWYHrGuupqLy0"
+                secret: "ovMeJRj3x6w.cwA.2ac.X_nVXspKtICvJlj_CSZ_1WZSGxJnG7iLgKP4h3JT2Ws"
             });
     })();
 </script>
